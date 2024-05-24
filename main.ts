@@ -10,6 +10,13 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     }
     lcd16x2rgb.setCursor(lcd16x2rgb.lcd16x2_eADDR(lcd16x2rgb.eADDR_LCD.LCD_16x2_x3E), zeile, spalte)
 })
+function Konfiguration () {
+    lcd16x2rgb.comment("elssner/gpio-8key-62")
+    lcd16x2rgb.comment("3 Erweiterungen:")
+    lcd16x2rgb.comment("calliope-net/gpio")
+    lcd16x2rgb.comment("calliope-net/lcd-16x2")
+    lcd16x2rgb.comment("calliope-net/bit")
+}
 let zeichencode = 0
 let spalte = 0
 let zeile = 0
